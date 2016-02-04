@@ -1,16 +1,12 @@
 <!doctype html>
 <html>
-
 <head>
   <meta charset='utf-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1.0' />
 
-  <!-- Compiled and minified CSS -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css'>
   <script type='text/javascript' src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
-  <!-- Compiled and minified JavaScript -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js'></script>
-
 
   <style>
     body {
@@ -23,25 +19,50 @@
     }
 
     .hero-container {
-      background-color: #EB4511;
+      background-color: green;
       height: 400px;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .hero__cover {
-        overflow: hidden;
-        /*height: 500px;*/
+      overflow: hidden;
+      /*height: 500px;*/
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .hero__cover__bg {
+      z-index: 5;
+      /*width: 100%;*/
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
     }
 
     .hero__cover__img {
       width: 100%;
-
+      height: 100%;
+      position: absolute;
+      z-index: 3;
+      background-image: url('img/cover.jpg');
+      background-size: cover;
+      background-position: center;
     }
 
     .hero__cover__logo {
-      width: 80%;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
+      width: 90%;
+      max-width: 1000px;
+      position: absolute;
+      left: 46.5%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 100%;
+      z-index: 20;
     }
 
     .news-container {
@@ -49,8 +70,14 @@
       height: 400px;
     }
 
-    .nav {
-      height: 50px;
+    .blogs {
+      height: 400px;
+      background-color: white;
+    }
+
+    .footer {
+      height: 300px;
+      background-color: #3d3d3d;
     }
   </style>
 
@@ -59,17 +86,11 @@
 <body>
 
   <section class='hero '>
-    <div class='container hero-container z-depth-7'>
-      <div class='row'>
-        <div class='col s12 nav'>
-          navigation
-        </div>
-      </div>
+    <div class=' hero-container z-depth-7'>
       <div class='row hero__cover'>
-        <div class="col s12">
-            <img class="hero__cover__logo valign-wrapper" src="img/logo-weiss.svg" />
-        </div>
-
+        <img class="hero__cover__logo valign-wrapper" src="img/logo-weiss.svg" />
+        <img class="hero__cover__bg" src="../cover-background3.svg" />
+        <div class="hero__cover__img" />
       </div>
     </div>
   </section>
@@ -82,6 +103,21 @@
     </div>
   </section>
 
+  <section class=''>
+    <div class='blogs container'>
+      <div class='row'>
+        <div class='col s1'>12</div>
+      </div>
+    </div>
+  </section>
+
+  <section class=''>
+    <div class='footer container'>
+      <div class='row'>
+        <div class='col s1'>12</div>
+      </div>
+    </div>
+  </section>
 
 </body>
 
