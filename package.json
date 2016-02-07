@@ -1,0 +1,25 @@
+{
+  "name": "tvwn-website",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tvwilen-neunforn/website.git"
+  },
+  "author": "Andrin Bertschi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tvwilen-neunforn/website/issues"
+  },
+  "homepage": "https://github.com/tvwilen-neunforn/website#readme",
+
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-connect": "^2.2.0",
+    "gulp-sass": "^2.0.0"
+  }
+}
