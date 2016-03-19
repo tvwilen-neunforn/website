@@ -4,13 +4,13 @@ body {
 }
 
 .hero-padding {
-  padding-top: 50px;
   width: 100%;
 }
 
 .hero {
   background-color: green;
-  height: 400px;
+  height: 100vh;
+  width: 100%;
 
 }
 
@@ -49,6 +49,19 @@ body {
   transform: translate(-50%, -50%);
   height: 100%;
   z-index: 20;
+}
+
+.hero-slogan {
+  z-index: 50;
+  position: absolute;
+  left: 46.5%;
+  top: 75%;
+  transform: translate(-50%, -50%);
+  line-height: 99.5px;
+  font-weight: strong;
+  font-size: 90px;
+
+  color: white;
 }
 
 .news {
